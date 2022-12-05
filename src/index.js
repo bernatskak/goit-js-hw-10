@@ -32,7 +32,7 @@ function handlerFetchCountries(value) {
 
 function response(params) {
   if (params.length > 10) overTenCountries(params);
-  if (params.length <= 10 && params.length > 1) lessTenCountries(params);
+  if (params.length <= 10 && params.length >= 2) lessTenCountries(params);
   if (params.length === 1) oneCoutnry(params);
 }
 
