@@ -17,7 +17,7 @@ refs.input.addEventListener('input', debounce(onInput, DEBOUNCE_DELAY));
 function onInput(e) {
   const value = e.target.value.trim();
   if (value.length < 1) reset();
-  if (!value) return;
+
   handlerFetchCountries(value);
 }
 
